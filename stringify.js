@@ -1,5 +1,5 @@
 var onfield = function (f, result) {
-  var prefix = f.repeated ? 'repeated' : f.required ? 'required' : 'optional'
+  var prefix = f.repeated ? 'repeated' : f.required ? 'required' : ''
   if (f.type === 'map') prefix = 'map<' + f.map.from + ',' + f.map.to + '>'
   if (f.oneof) prefix = ''
 
